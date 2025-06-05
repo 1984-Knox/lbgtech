@@ -1093,3 +1093,10 @@ img {
     }
 }
 
+
+.header-logo {
+    height: 50px; /* Ajuste conforme necessário */
+    width: auto;
+    vertical-align: middle;
+}
+
