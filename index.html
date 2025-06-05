@@ -3,19 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LBG TECH: Criação de Websites, Fintechs e Aceleração de Startups. Soluções tecnológicas inovadoras para o seu negócio.">
+    <meta name="keywords" content="desenvolvimento web, fintech, startup, tecnologia, inovação, soluções digitais, websites responsivos">
+    <meta name="author" content="LBG TECH">
+    <meta name="robots" content="index, follow">
     <title>LBG TECH - Soluções Tecnológicas para seu Negócio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- Preload de imagens críticas -->
+    <link rel="preload" href="lbg_tech_logo_option1.png" as="image">
+    <link rel="preload" href="images/tech_services.jpg" as="image">
 </head>
 <body>
     <!-- Header -->
     <header class="header">
         <div class="container">
             <div class="logo">
-                <img src="lbg_tech_logo_option1.png" alt="LBG TECH Logo" class="header-logo">
+                <img src="lbg_tech_logo_option1.png" alt="LBG TECH Logo - Empresa de soluções tecnológicas" class="header-logo">
             </div>
             <nav class="nav-menu">
                 <ul>
@@ -35,16 +42,16 @@
 
     <!-- Menu Flutuante Lateral -->
     <div class="social-sidebar">
-        <a href="https://www.instagram.com/" target="_blank" class="social-sidebar-item">
-            <img src="images/social/instagram.jpg" alt="Instagram">
+        <a href="https://www.instagram.com/" target="_blank" class="social-sidebar-item" aria-label="Siga-nos no Instagram">
+            <img src="images/social/instagram.jpg" alt="Ícone do Instagram">
             <span>Instagram</span>
         </a>
-        <a href="https://www.linkedin.com/" target="_blank" class="social-sidebar-item">
-            <img src="images/social/linkedin.png" alt="LinkedIn">
+        <a href="https://www.linkedin.com/" target="_blank" class="social-sidebar-item" aria-label="Conecte-se no LinkedIn">
+            <img src="images/social/linkedin.png" alt="Ícone do LinkedIn">
             <span>LinkedIn</span>
         </a>
-        <a href="https://wa.me/5511999999999" target="_blank" class="social-sidebar-item">
-            <img src="images/social/whatsapp.jpg" alt="WhatsApp">
+        <a href="https://wa.me/5511999999999" target="_blank" class="social-sidebar-item" aria-label="Fale conosco pelo WhatsApp">
+            <img src="images/social/whatsapp.jpg" alt="Ícone do WhatsApp">
             <span>WhatsApp</span>
         </a>
     </div>
@@ -53,12 +60,12 @@
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1>Transformando Ideias em Soluções Tecnológicas de Impacto</h1>
+                <h1>LBG TECH: Acelerando seu Negócio com Tecnologia de Ponta</h1>
                 <p>Especialistas em desenvolvimento de websites, fintechs e aceleração de startups que impulsionam o crescimento do seu negócio no mundo digital.</p>
-                <a href="#contato" class="btn btn-primary">SOLICITAR ORÇAMENTO</a>
+                <a href="#contato" class="btn btn-primary btn-animated">COMECE SUA TRANSFORMAÇÃO DIGITAL</a>
             </div>
             <div class="hero-image">
-                <img src="images/tech_services.jpg" alt="Soluções Tecnológicas">
+                <img src="images/tech_services.jpg" alt="Equipe da LBG TECH desenvolvendo soluções tecnológicas inovadoras">
             </div>
         </div>
     </section>
@@ -84,7 +91,7 @@
                         <li>Integração com sistemas de gestão e pagamento</li>
                         <li>Painel administrativo intuitivo</li>
                     </ul>
-                    <a href="#contato" class="btn btn-secondary">Saiba mais</a>
+                    <a href="#contato" class="btn btn-secondary">Solicite um orçamento</a>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">
@@ -99,7 +106,7 @@
                         <li>Integração com APIs bancárias</li>
                         <li>Conformidade com regulamentações do setor</li>
                     </ul>
-                    <a href="#contato" class="btn btn-secondary">Saiba mais</a>
+                    <a href="#contato" class="btn btn-secondary">Descubra possibilidades</a>
                 </div>
                 <div class="service-card">
                     <div class="service-icon">
@@ -114,7 +121,7 @@
                         <li>Implementação de metodologias ágeis</li>
                         <li>Estratégias de crescimento e escalabilidade</li>
                     </ul>
-                    <a href="#contato" class="btn btn-secondary">Saiba mais</a>
+                    <a href="#contato" class="btn btn-secondary">Impulsione sua startup</a>
                 </div>
             </div>
         </div>
@@ -138,7 +145,7 @@
                     </ul>
                 </div>
                 <div class="about-image">
-                    <img src="images/rocket.png" alt="Foguete representando crescimento">
+                    <img src="images/rocket.png" alt="Ilustração de foguete representando o crescimento acelerado proporcionado pela LBG TECH">
                 </div>
             </div>
         </div>
@@ -196,28 +203,55 @@
             <div class="testimonials-slider">
                 <div class="testimonial">
                     <div class="testimonial-content">
+                        <div class="client-logo">
+                            <img src="images/tech_services.jpg" alt="Logo da TechSolutions" class="client-company-logo">
+                        </div>
                         <p>"A LBG TECH transformou completamente nossa presença digital. O novo website não só melhorou nossa imagem, mas também aumentou nossas conversões em 45% no primeiro trimestre."</p>
                         <div class="client-info">
-                            <h4>Maria Silva</h4>
-                            <p>CEO da TechSolutions</p>
+                            <div class="client-photo">
+                                <!-- Placeholder para foto do cliente -->
+                                <div class="client-photo-placeholder"></div>
+                            </div>
+                            <div class="client-details">
+                                <h4>Maria Silva</h4>
+                                <p>CEO da TechSolutions</p>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial">
                     <div class="testimonial-content">
+                        <div class="client-logo">
+                            <img src="images/fintech.jpg" alt="Logo da PayFast" class="client-company-logo">
+                        </div>
                         <p>"O desenvolvimento da nossa plataforma fintech pela LBG TECH superou todas as expectativas. A equipe entendeu perfeitamente nossas necessidades e entregou uma solução robusta e escalável."</p>
                         <div class="client-info">
-                            <h4>Carlos Mendes</h4>
-                            <p>Fundador da PayFast</p>
+                            <div class="client-photo">
+                                <!-- Placeholder para foto do cliente -->
+                                <div class="client-photo-placeholder"></div>
+                            </div>
+                            <div class="client-details">
+                                <h4>Carlos Mendes</h4>
+                                <p>Fundador da PayFast</p>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial">
                     <div class="testimonial-content">
+                        <div class="client-logo">
+                            <img src="images/startup.webp" alt="Logo da GrowthTech" class="client-company-logo">
+                        </div>
                         <p>"Como uma startup em fase inicial, o programa de aceleração da LBG TECH foi fundamental para nosso crescimento. Em apenas seis meses, conseguimos desenvolver nosso MVP e atrair investidores."</p>
                         <div class="client-info">
-                            <h4>Ana Costa</h4>
-                            <p>Co-fundadora da GrowthTech</p>
+                            <div class="client-photo">
+                                <!-- Placeholder para foto do cliente -->
+                                <div class="client-photo-placeholder"></div>
+                            </div>
+                            <div class="client-details">
+                                <h4>Ana Costa</h4>
+                                <p>Co-fundadora da GrowthTech</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -278,12 +312,60 @@
         </div>
     </section>
 
+    <!-- Blog/Notícias -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <div class="section-header">
+                <h2>Blog & Insights</h2>
+                <p>Conteúdo relevante sobre tecnologia, inovação e tendências de mercado</p>
+            </div>
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/tech_services.jpg" alt="Tendências de desenvolvimento web para 2025">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">05 Jun, 2025</span>
+                        <h3>Tendências de Desenvolvimento Web para 2025</h3>
+                        <p>Descubra as principais tendências que estão moldando o futuro do desenvolvimento web e como elas podem impactar seu negócio.</p>
+                        <a href="#" class="blog-link">Leia mais</a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/fintech.jpg" alt="O futuro das fintechs no Brasil">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">28 Mai, 2025</span>
+                        <h3>O Futuro das Fintechs no Brasil</h3>
+                        <p>Análise do cenário atual e perspectivas futuras para o mercado de fintechs no Brasil, com foco em oportunidades e desafios.</p>
+                        <a href="#" class="blog-link">Leia mais</a>
+                    </div>
+                </div>
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/startup.webp" alt="Como validar sua ideia de startup">
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">15 Mai, 2025</span>
+                        <h3>Como Validar sua Ideia de Startup</h3>
+                        <p>Guia prático com estratégias eficientes para validar sua ideia de startup antes de investir tempo e recursos no desenvolvimento.</p>
+                        <a href="#" class="blog-link">Leia mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-cta">
+                <a href="#" class="btn btn-secondary">Ver todos os artigos</a>
+            </div>
+        </div>
+    </section>
+
     <!-- CTA -->
     <section class="cta">
         <div class="container">
             <h2>Pronto para Transformar seu Negócio com Tecnologia?</h2>
             <p>Entre em contato conosco hoje mesmo para uma consulta gratuita. Nossa equipe está pronta para entender suas necessidades e desenvolver a solução tecnológica ideal para o seu negócio.</p>
-            <a href="#contato" class="btn btn-primary">AGENDAR CONSULTA GRATUITA</a>
+            <a href="#contato" class="btn btn-primary btn-large">AGENDAR CONSULTA GRATUITA</a>
         </div>
     </section>
 
@@ -299,31 +381,21 @@
                     <form id="contactForm">
                         <div class="form-group">
                             <label for="name">Nome</label>
-                            <input type="text" id="name" name="name" required>
+                            <input type="text" id="name" name="name" placeholder="Seu nome completo" required>
                         </div>
                         <div class="form-group">
                             <label for="email">E-mail</label>
-                            <input type="email" id="email" name="email" required>
+                            <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com" required>
                         </div>
                         <div class="form-group">
                             <label for="phone">Telefone</label>
-                            <input type="tel" id="phone" name="phone">
+                            <input type="tel" id="phone" name="phone" placeholder="(00) 00000-0000">
                         </div>
                         <div class="form-group">
-                            <label for="service">Serviço de Interesse</label>
-                            <select id="service" name="service">
-                                <option value="">Selecione um serviço</option>
-                                <option value="website">Criação de Website</option>
-                                <option value="fintech">Desenvolvimento de Fintech</option>
-                                <option value="startup">Aceleração de Startup</option>
-                                <option value="other">Outro</option>
-                            </select>
+                            <label for="message">Como podemos ajudar?</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Descreva seu projeto ou necessidade..." required></textarea>
                         </div>
-                        <div class="form-group">
-                            <label for="message">Mensagem</label>
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                        <button type="submit" class="btn btn-primary btn-full">Enviar Mensagem</button>
                     </form>
                 </div>
                 <div class="contact-info">
@@ -345,10 +417,10 @@
                     <div class="social-media">
                         <h3>Redes Sociais</h3>
                         <div class="social-icons">
-                            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-                            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-                            <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
-                            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a href="#" target="_blank" aria-label="LinkedIn da LBG TECH"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" target="_blank" aria-label="Instagram da LBG TECH"><i class="fab fa-instagram"></i></a>
+                            <a href="#" target="_blank" aria-label="Facebook da LBG TECH"><i class="fab fa-facebook"></i></a>
+                            <a href="#" target="_blank" aria-label="Twitter da LBG TECH"><i class="fab fa-twitter"></i></a>
                         </div>
                     </div>
                 </div>
@@ -373,7 +445,8 @@
                         allowfullscreen="" 
                         loading="lazy" 
                         referrerpolicy="no-referrer-when-downgrade"
-                        class="grayscale-map">
+                        class="grayscale-map"
+                        title="Localização da LBG TECH na Avenida Paulista">
                     </iframe>
                 </div>
                 <div class="address-info">
@@ -393,7 +466,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <h2>LBG TECH</h2>
+                    <img src="lbg_tech_logo_option1.png" alt="LBG TECH Logo" class="footer-logo-img">
                     <p>Transformando ideias em soluções tecnológicas de impacto</p>
                 </div>
                 <div class="footer-links">
@@ -433,10 +506,24 @@
     </footer>
 
     <!-- Botão WhatsApp Flutuante -->
-    <a href="https://wa.me/5511999999999" class="whatsapp-float" target="_blank">
-        <img src="images/whatsapp.jpg" alt="Fale conosco pelo WhatsApp">
+    <a href="https://wa.me/5511999999999" class="whatsapp-float" target="_blank" aria-label="Fale conosco pelo WhatsApp">
+        <img src="images/whatsapp.jpg" alt="Ícone do WhatsApp">
         <span class="whatsapp-text">Fale conosco</span>
     </a>
+
+    <!-- Pop-up de Intenção de Saída -->
+    <div id="exit-intent-popup" class="exit-popup">
+        <div class="exit-popup-content">
+            <span class="close-popup">&times;</span>
+            <h3>Espere um momento!</h3>
+            <p>Antes de sair, que tal receber nosso e-book gratuito?</p>
+            <h4>"Guia Definitivo: Como a Tecnologia Pode Transformar Seu Negócio"</h4>
+            <form id="popup-form">
+                <input type="email" placeholder="Seu melhor e-mail" required>
+                <button type="submit" class="btn btn-primary">Quero receber o e-book</button>
+            </form>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
