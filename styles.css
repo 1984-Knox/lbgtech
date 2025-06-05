@@ -962,3 +962,134 @@ img {
     }
 }
 
+
+/* Menu Flutuante Lateral */
+.social-sidebar {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    z-index: 999;
+}
+
+.social-sidebar-item {
+    display: flex;
+    align-items: center;
+    background-color: var(--white);
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 0 8px 8px 0;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    transform: translateX(-70%);
+    transition: transform 0.3s ease;
+    text-decoration: none;
+}
+
+.social-sidebar-item:hover {
+    transform: translateX(0);
+}
+
+.social-sidebar-item img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.social-sidebar-item span {
+    color: var(--dark-color);
+    font-weight: 600;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+/* Mapa e Localização */
+.location {
+    padding: var(--spacing-lg) 0;
+    background-color: var(--light-gray);
+}
+
+.location-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-md);
+}
+
+.map-container {
+    flex: 1 1 600px;
+    border-radius: var(--border-radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+}
+
+.grayscale-map {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+}
+
+.grayscale-map:hover {
+    filter: grayscale(50%);
+}
+
+.address-info {
+    flex: 1 1 300px;
+    background-color: var(--white);
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-md);
+}
+
+.address-info h3 {
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-sm);
+}
+
+.address-info p {
+    margin-bottom: var(--spacing-xs);
+    display: flex;
+    align-items: center;
+}
+
+.address-info i {
+    margin-right: 10px;
+    color: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+    .social-sidebar {
+        bottom: 80px;
+        top: auto;
+        left: 0;
+        transform: none;
+        flex-direction: row;
+    }
+    
+    .social-sidebar-item {
+        transform: translateX(0);
+        border-radius: 8px;
+        margin: 0 5px;
+        padding: 5px;
+    }
+    
+    .social-sidebar-item img {
+        width: 30px;
+        height: 30px;
+        margin-right: 0;
+    }
+    
+    .social-sidebar-item span {
+        display: none;
+    }
+    
+    .location-container {
+        flex-direction: column;
+    }
+    
+    .map-container, .address-info {
+        flex: 1 1 100%;
+    }
+}
+
